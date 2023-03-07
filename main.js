@@ -1,12 +1,10 @@
-
-/* fetch("https://video-game-news.p.rapidapi.com/grand_theft_auto", {
+fetch('https://gaming-news.p.rapidapi.com/news', {
   "method": 'GET',
   "headers": {
-    "X-RapidAPI-Key": "923ad65099mshc1326bda6374934p15d348jsn94e48402d287",
-    "X-RapidAPI-Host": "video-game-news.p.rapidapi.com"
+    'X-RapidAPI-Key': '9fe06917e5mshb5e05f239c6b3a6p11a447jsn42ae48c8d59f',
+    'X-RapidAPI-Host': 'gaming-news.p.rapidapi.com',
   }
-}) */
-
+})
   .then(response => response.json())
   .then(response => {
     console.log(response);
