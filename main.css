@@ -130,164 +130,7 @@ a > span:after {
 /*---------------FIN GRID---------------------*/
 
 /*---------------COMIENZO ABOUT---------------------*/
-.about_container {
-  /* border: 1px solid white; */
-  width: 85%;
-  height: 330px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 44px;
-  font-family: monospace;
-}
 
-.txt_about {
-  color: #ffffff;
-  width: 650px;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-@-webkit-keyframes cf4FadeInOut {
-  0% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  92% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes cf4FadeInOut {
-  0% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-
-  92% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes cf4FadeInOut {
-  0% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  92% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes cf4FadeInOut {
-  0% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  92% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#cf4a {
-  position: relative;
-  /* margin: 0px auto; */
-  height: 100%;
-  display: flex;
-  align-items: center;
-  align-content: center;
-}
-
-#cf4a img {
-  position: absolute;
-  left: 0;
-}
-
-#cf4a img {
-  -webkit-animation-name: cf4FadeInOut;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 9s;
-
-  -moz-animation-name: cf4FadeInOut;
-  -moz-animation-timing-function: ease-in-out;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-duration: 9s;
-
-  -o-animation-name: cf4FadeInOut;
-  -o-animation-timing-function: ease-in-out;
-  -o-animation-iteration-count: infinite;
-  -o-animation-duration: 9s;
-
-  animation-name: cf4FadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 9s;
-}
-#cf4a img:nth-of-type(1) {
-  -webkit-animation-delay: 7s;
-  -moz-animation-delay: 7s;
-  -o-animation-delay: 7s;
-  animation-delay: 7s;
-}
-#cf4a img:nth-of-type(2) {
-  -webkit-animation-delay: 5s;
-  -moz-animation-delay: 5s;
-  -o-animation-delay: 5s;
-  animation-delay: 5s;
-}
-#cf4a img:nth-of-type(3) {
-  -webkit-animation-delay: 3s;
-  -moz-animation-delay: 3s;
-  -o-animation-delay: 3s;
-  animation-delay: 3s;
-}
-/* #cf4a img:nth-of-type(4) {
-  -webkit-animation-delay: 0;
-  -moz-animation-delay: 0;
-  -o-animation-delay: 0;
-  animation-delay: 0;
-} */
-
-/* .dj_img {
-  width: 100%;
-  height: auto;
-} */
 /*---------------FIN ABOUT---------------------*/
 
 /*---------------COMIENZO  NEWS---------------------*/
@@ -324,6 +167,7 @@ a > span:after {
 }
 
 #quote,
+#text_0,
 #author {
   display: flex;
   justify-content: center;
@@ -339,7 +183,8 @@ a > span:after {
   border-radius: 20px;
 }
 
-#quote {
+#quote,
+#text_0 {
   font-family: "Bradley Hand ITC";
   text-align: center;
   font-size: 20px;
