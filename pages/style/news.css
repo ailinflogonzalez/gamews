@@ -111,6 +111,7 @@ a > span:after {
 /*---------------FIN SIDEBAR--------------------*/
 /*---------------COMIENZO  NEWS---------------------*/
 .news {
+  padding: 3%;
   color: #ffffff;
   /* border: 1px solid white; */
   width: 100%;
@@ -127,12 +128,13 @@ a > span:after {
 
 .news_container {
   text-align: center;
-  width: 95%;
+  width: 450px;
   height: auto;
-  border: 1px solid pink;
+  border: 1px solid rgb(88, 88, 94);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 #title_0,
@@ -146,7 +148,6 @@ a > span:after {
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   color: rgb(51, 51, 51);
-  width: 30%;
   padding: 3%;
 }
 
@@ -158,7 +159,7 @@ a > span:after {
 #short_description_5 {
   color: rgb(88, 88, 94);
   font-family: "Oswald", sans-serif;
-  width: 40%;
+  width: 240px;
 }
 
 #url_0,
@@ -171,9 +172,13 @@ a > span:after {
   height: 35px;
   color: gray;
   font-family: "Oswald", sans-serif;
-  border: 1px solid #000000;
+  border: 1px solid rgb(47, 247, 97);
+  background-color: rgb(47, 247, 97);
   border-radius: 7%;
   margin: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*---------------FIN  NEWS---------------------*/
