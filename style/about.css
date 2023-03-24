@@ -12,7 +12,7 @@
 }
 
 body {
-  color: #000000;
+  background-color: #000000;
   width: 100%;
   max-width: 1400px;
   display: flex;
@@ -110,6 +110,141 @@ a > span:after {
   padding: 2%;
 }
 /*---------------FIN SIDEBAR--------------------*/
+
+/*---------------COMIENZO GALLERY---------------------*/
+.CSSgal {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  width: 80%;
+  padding: 2%;
+  background: black;
+}
+/* max-width: 808px;
+   /* Or set a fixed height */
+
+/* SLIDER */
+
+.CSSgal .slider {
+  height: 90%;
+  white-space: nowrap;
+  transition: 0.8s;
+}
+
+/* SLIDES */
+
+.CSSgal .slider > * {
+  font-size: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  white-space: normal;
+  vertical-align: top;
+
+  background: none 50% no-repeat;
+  background-size: cover;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 91%;
+  height: 0;
+}
+
+.CSSgal .prevNext > div + div {
+  visibility: hidden;
+}
+
+.CSSgal .prevNext a {
+  background: rgb(49, 48, 48);
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  border-radius: 50%;
+}
+.CSSgal .prevNext a:hover {
+  opacity: 1;
+}
+.CSSgal .prevNext a + a {
+  left: auto;
+  right: 0;
+}
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal > s:target ~ .prevNext > * {
+  visibility: hidden;
+}
+/* ACTIVE: */
+#s1:target ~ .prevNext > *:nth-child(1) {
+  visibility: visible;
+}
+#s2:target ~ .prevNext > *:nth-child(2) {
+  visibility: visible;
+}
+#s3:target ~ .prevNext > *:nth-child(3) {
+  visibility: visible;
+}
+#s4:target ~ .prevNext > *:nth-child(4) {
+  visibility: visible;
+}
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider {
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+}
+#s2:target ~ .slider {
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+#s3:target ~ .slider {
+  transform: translateX(-200%);
+  -webkit-transform: translateX(-200%);
+}
+#s4:target ~ .slider {
+  transform: translateX(-300%);
+  -webkit-transform: translateX(-300%);
+}
+
+/* .CSSgal {
+  color: #fff;
+  text-align: center;
+}
+.CSSgal .slider h2 {
+  font-weight: 200;
+  letter-spacing: -0.06em;
+  word-spacing: 0.2em;
+  font-size: 3em;
+}
+.CSSgal a {
+  border-radius: 50%;
+  margin: 0 3px;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+} */
+
+.slider img {
+  width: 76%;
+  height: auto;
+}
+/*---------------FIN  GALLERY---------------------*/
+
 /* COMIENZO FOOTER */
 footer {
   width: 100%;
