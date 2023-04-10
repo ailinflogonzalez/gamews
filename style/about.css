@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap");
 
 * {
   margin: 0;
@@ -245,7 +246,46 @@ a > span:after {
 }
 /*---------------FIN  GALLERY---------------------*/
 
-/* COMIENZO FOOTER */
+/*---------------COMIENZO ABOUT---------------------*/
+.about {
+  color: white;
+  font-family: "Maven Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 70%;
+  gap: 60px;
+}
+
+.about-body {
+  line-height: 1.7;
+}
+
+.top-12 {
+  padding-bottom: 3%;
+  line-height: 1.5;
+}
+/*---------------FIN ABOUT---------------------*/
+
+/*---------------COMIENZO MEDIA QUERY---------------------*/
+@media (max-width: 500px) {
+  .side_img {
+    display: none;
+  }
+
+  .sidebar a {
+    text-align: center;
+    width: 25%;
+  }
+
+  .CSSgal {
+    display: none;
+  }
+}
+/*---------------FIN MEDIA QUERY---------------------*/
+
+/*---------------COMIENZO FOOTER---------------------*/
 footer {
   width: 100%;
   height: auto;
@@ -264,4 +304,4 @@ footer {
   font-family: "Dosis", sans-serif;
   color: #ffffff;
 }
-/* FIN FOOTER */
+/*---------------FIN FOOTER---------------------*/

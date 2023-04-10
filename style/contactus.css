@@ -111,6 +111,18 @@ a > span:after {
 }
 /*---------------FIN SIDEBAR--------------------*/
 
+/*---------------COMIENZO HERO--------------------*/
+.hero {
+  background-image: url("/img/contacto/mapamundi.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  max-width: 1400px;
+  height: 850px;
+  position: relative;
+}
+/*---------------FIN HERO--------------------*/
+
 /* COMIENZO FOOTER */
 footer {
   width: 100%;
